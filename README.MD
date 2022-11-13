@@ -19,4 +19,4 @@ options:
 Before running the script install dependecies via `pip install -r requirements.txt` command.
 
 ## What is a KDZ file?
-A KDZ file is an encrypted CAB archive file. Encryption method is RC4. A key is based on file size and a special string, which was found in original .DLL for decrypting those files.
+A KDZ file is an encrypted CAB archive file. Encryption method is RC4. A key is based on file size and a special string, which was found in original DLL for decrypting those files, and then hashed with MD5 algorithm.
