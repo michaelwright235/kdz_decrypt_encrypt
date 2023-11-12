@@ -75,11 +75,11 @@ def encrypt(filename_in, filename_out):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
                         prog = 'kdz.py',
-                        description = 'Decrypts or encrypts KDZ files for old LG phones')
+                        description = 'Decrypt and encrypt KDZ files for old LG phones')
     parser.add_argument('-d', help='Decrypt KDZ file', action='store_true')
     parser.add_argument('-e', help='Encrypt CAB file', action='store_true')
-    parser.add_argument('-o', help='Output filename. By default converted file is saved in the same folder.', type=str)
-    parser.add_argument('filename', help='Path to a file', type=str)
+    parser.add_argument('-o', help='Output filename. By default the converted file is saved in the same folder.', type=str)
+    parser.add_argument('filename', help='Path to the file', type=str)
     args = parser.parse_args()
 
     if os.path.isfile(args.filename) == False:
